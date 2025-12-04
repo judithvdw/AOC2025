@@ -29,8 +29,8 @@ with open('inputs/d2.txt') as f:
 total = 0
 total_2 = 0
 for code in codes:
-    s, f = code.split('-')
-    for num in range(int(s), int(f) + 1):
+    start, finish = code.split('-')
+    for num in range(int(start), int(finish) + 1):
         if is_invalid(str(num)):
             total += num
         total_2 += sum(is_invalid_2(str(num)))
