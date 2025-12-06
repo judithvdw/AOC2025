@@ -29,7 +29,7 @@ def parse_spaces(rows):
     return split_rows
 
 
-with open('inputs/d6.txt') as f:  # added an extra column of 0's and a '+' to make it work
+with open('inputs/d6.txt') as f:
     rows = f.read().splitlines()
 
 number_rows = [list(map(int, row.split())) for row in rows[:-1]]
